@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atharv Raval | CSE Student Portfolio</title>
+    <meta name="description" content="Personal portfolio of Atharv Raval, a 3rd-year Computer Science Engineering Diploma student at YCP. Showcasing projects in an interactive IDE workspace, hobbies as RPG character stats, and custom design aesthetics.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Animated Background Blobs -->
+    <div class="bg-blob blob-1"></div>
+    <div class="bg-blob blob-2"></div>
+    <div class="bg-blob blob-3"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header">
+        <div class="header-container">
+            <a href="#intro" class="logo" id="logo-emblem">
+                <span class="logo-symbol">A</span>
+                <span class="logo-dot"></span>
+                <span class="logo-symbol">R</span>
+            </a>
+            <nav class="nav">
+                <ul>
+                    <li><a href="#intro" class="nav-link active"><span>01/</span> Intro</a></li>
+                    <li><a href="#about" class="nav-link"><span>02/</span> About</a></li>
+                    <li><a href="#stack" class="nav-link"><span>03/</span> Stack</a></li>
+                    <li><a href="#projects" class="nav-link"><span>04/</span> Work</a></li>
+                    <li><a href="#hobbies" class="nav-link"><span>05/</span> Hobbies</a></li>
+                </ul>
+            </nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <!-- Bento Dashboard Grid -->
+        <div class="bento-grid">
+            
+            <!-- CARD 1: Hero / Intro (2 cols, 2 rows) -->
+            <section id="intro" class="bento-cell cell-hero reveal-up card-tint-indigo">
+                <div class="hero-content">
+                    <div class="badge-status">
+                        <span class="status-indicator"></span>
+                        <span class="status-text">Available for Internships</span>
+                    </div>
+                    <p class="hero-kicker">Hello, I'm</p>
+                    <h1 class="hero-title">Atharv Raval</h1>
+                    <h2 class="hero-subtitle">CSE student specialized in <span class="typing-text" id="typing-text"></span></h2>
+                    <p class="hero-desc">
+                        A final-year Computer Science Engineering Diploma student at Yashwantrao Chavan Polytechnic (YCP). I focus on creating neat interfaces and learning systems engineering.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">Check Projects</a>
+                        <a href="#about" class="btn btn-secondary">Get to Know Me</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 2: Profile Picture (1 col, 2 rows) -->
+            <div class="bento-cell cell-profile reveal-up card-tint-cyan" style="transition-delay: 0.1s;">
+                <div class="profile-card-content">
+                    <div class="avatar-badge-wrapper">
+                        <div class="avatar-gradient-border"></div>
+                        <img src="assets/profile.jpg" alt="Atharv Raval" class="avatar-img">
+                    </div>
+                    <div class="profile-details">
+                        <h3 class="profile-name">Atharv Raval</h3>
+                        <p class="profile-role">CSE Diploma @ YCP</p>
+                        <div class="profile-social-links">
+                            <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="social-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                            </a>
+                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="social-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                            </a>
+                            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="social-btn">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARD 3: About Me (2 cols, 1 row) -->
+            <section id="about" class="bento-cell cell-about reveal-up card-tint-indigo">
+                <div class="card-inner">
+                    <div class="card-tag">01 / Profile</div>
+                    <h3 class="card-title">About Me</h3>
+                    <div class="about-content">
+                        <p>
+                            I'm currently in my final year of the <strong>Computer Science Engineering Diploma</strong> program at <strong>Yashwantrao Chavan Polytechnic (YCP)</strong>. My curriculum covers algorithms, data structures, databases, and programming paradigms.
+                        </p>
+                        <p>
+                            Outside class, I dedicate my time to building full-stack applications, polishing my frontend styling workflows, and understanding backend systems. I strive to write clear, documentation-rich code.
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 4: Certifications (1 col, 2 rows) -->
+            <section id="certifications" class="bento-cell cell-certs reveal-up card-tint-violet" style="transition-delay: 0.1s;">
+                <div class="card-inner">
+                    <div class="card-tag">02 / Focus</div>
+                    <h3 class="card-title">Certifications</h3>
+                    <div class="certs-list">
+                        <div class="cert-item">
+                            <span class="cert-year">2025</span>
+                            <h4>Google IT Support</h4>
+                            <p class="cert-inst">Coursera / Google</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-year">2025</span>
+                            <h4>JavaScript DS & Algos</h4>
+                            <p class="cert-inst">freeCodeCamp</p>
+                        </div>
+                        <div class="cert-item">
+                            <span class="cert-year">2026</span>
+                            <h4>Python for Data Science</h4>
+                            <p class="cert-inst">Cognitive Class</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 5: Tech Stack (2 cols, 2 rows) -->
+            <section id="stack" class="bento-cell cell-stack reveal-up card-tint-cyan">
+                <div class="card-inner">
+                    <div class="card-tag">03 / Toolkit</div>
+                    <h3 class="card-title">Technical Stack</h3>
+                    <p class="card-desc">Click/hover a tag to output practical use notes to the terminal.</p>
+                    
+                    <div class="stack-dashboard">
+                        <div class="stack-list">
+                            <div class="stack-group">
+                                <h5>Languages</h5>
+                                <div class="badge-container">
+                                    <button class="tech-badge active" data-desc="HTML5: Building accessible, semantic structures for web apps.">HTML5</button>
+                                    <button class="tech-badge" data-desc="CSS3: Creating custom responsive layouts and smooth scroll animations.">CSS3</button>
+                                    <button class="tech-badge" data-desc="JavaScript: ES6+ syntax, client-side logic, and interactive DOM manipulation.">JavaScript</button>
+                                    <button class="tech-badge" data-desc="Python: Scripting, socket programming (networking), and core algorithm writing.">Python</button>
+                                    <button class="tech-badge" data-desc="C/C++: Coursework base covering memory management and OOP fundamentals.">C / C++</button>
+                                </div>
+                            </div>
+                            <div class="stack-group">
+                                <h5>Web & Relational</h5>
+                                <div class="badge-container">
+                                    <button class="tech-badge" data-desc="Node.js: Creating runtime scripts and supporting backend server operations.">Node.js</button>
+                                    <button class="tech-badge" data-desc="Express: Building light Rest APIs and routing modules.">Express</button>
+                                    <button class="tech-badge" data-desc="MySQL: Constructing relational tables, managing keys, and querying data.">MySQL</button>
+                                    <button class="tech-badge" data-desc="MongoDB: Handling NoSQL document collections for personal prototypes.">MongoDB</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Console Panel -->
+                        <div class="terminal-panel">
+                            <div class="terminal-header">
+                                <span class="term-dot"></span>
+                                <span class="term-dot"></span>
+                                <span class="term-dot"></span>
+                                <span class="term-file">ycp-stack-shell.bat</span>
+                            </div>
+                            <div class="terminal-body">
+                                <span class="term-prompt">ycp-cse-diploma&gt;</span>
+                                <p class="term-output" id="stack-info-text">HTML5: Building accessible, semantic structures for web apps.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 6: Projects (Spans 3 cols on desktop) - NEW WORKSPACE INTERFACE -->
+            <section id="projects" class="bento-cell cell-projects reveal-up card-tint-cyan">
+                <div class="card-inner">
+                    <div class="card-tag">04 / Workspace Explorer</div>
+                    <div class="projects-title-container">
+                        <h3 class="card-title">Interactive Project IDE</h3>
+                        <span class="ide-branch-badge">branch: main</span>
+                    </div>
+
+                    <!-- Simulated IDE Container -->
+                    <div class="ide-container">
+                        <!-- IDE Sidebar (Explorer Tree) -->
+                        <div class="ide-sidebar">
+                            <div class="ide-sidebar-title">workspace_root</div>
+                            <div class="ide-tree">
+                                <!-- Folder 1 -->
+                                <div class="ide-folder open" data-folder="student-hub">
+                                    <span class="ide-icon">📂</span> student-hub
+                                </div>
+                                <div class="ide-files" id="files-student-hub">
+                                    <button class="ide-file active" data-project="student-hub" data-file="readme">📄 README.md</button>
+                                    <button class="ide-file" data-project="student-hub" data-file="code">📄 local_storage.js</button>
+                                </div>
+
+                                <!-- Folder 2 -->
+                                <div class="ide-folder" data-folder="chat-cli">
+                                    <span class="ide-icon">📁</span> local-chat-cli
+                                </div>
+                                <div class="ide-files hidden" id="files-chat-cli">
+                                    <button class="ide-file" data-project="chat-cli" data-file="readme">📄 README.md</button>
+                                    <button class="ide-file" data-project="chat-cli" data-file="code">📄 server.py</button>
+                                </div>
+
+                                <!-- Folder 3 -->
+                                <div class="ide-folder" data-folder="portfolio">
+                                    <span class="ide-icon">📁</span> bento-portfolio
+                                </div>
+                                <div class="ide-files hidden" id="files-portfolio">
+                                    <button class="ide-file" data-project="portfolio" data-file="readme">📄 README.md</button>
+                                    <button class="ide-file" data-project="portfolio" data-file="code">📄 layout.css</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- IDE File Viewer / Output Console -->
+                        <div class="ide-viewer">
+                            <div class="ide-tabs-bar">
+                                <div class="ide-tab active" id="active-tab-title">README.md</div>
+                                <div class="ide-tab-actions">
+                                    <span class="ide-dot"></span>
+                                    <span class="ide-dot"></span>
+                                    <span class="ide-dot"></span>
+                                </div>
+                            </div>
+                            <div class="ide-content-area">
+                                <div class="ide-line-numbers" id="ide-line-gutter">
+                                    <!-- Populated dynamically by script.js -->
+                                </div>
+                                <pre class="ide-code-code" id="ide-code-viewport">Loading file details...</pre>
+                            </div>
+                            <div class="ide-status-bar">
+                                <span class="ide-status-left">UTF-8 // UTF-8-BOM // JavaScript (ES6)</span>
+                                <span class="ide-status-right">Row 1, Col 1 // YCP Y3</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CARD 7: Hobbies (Spans 3 cols on desktop) - NEW RPG CHARACTER STATUS SHEET -->
+            <section id="hobbies" class="bento-cell cell-hobbies reveal-up card-tint-violet">
+                <div class="card-inner">
+                    <div class="card-tag">05 / Character Passives</div>
+                    <h3 class="card-title">RPG Character Status Screen</h3>
+                    
+                    <div class="rpg-dashboard">
+                        <!-- RPG Left: Stats / Attributes -->
+                        <div class="rpg-stats-panel">
+                            <div class="rpg-character-header">
+                                <div class="rpg-avatar-mini">
+                                    <img src="assets/profile.jpg" alt="Atharv Raval">
+                                </div>
+                                <div class="rpg-title-meta">
+                                    <h4>Atharv Raval</h4>
+                                    <p class="rpg-class-label">Class: 3rd Year CSE Craftsman</p>
+                                </div>
+                            </div>
+                            <div class="rpg-stats-list">
+                                <div class="rpg-stat-row">
+                                    <span class="rpg-stat-label">INT (Analytical / Chess)</span>
+                                    <div class="rpg-stat-bar">
+                                        <div class="rpg-stat-fill" style="width: 85%;" id="stat-int"></div>
+                                    </div>
+                                    <span class="rpg-stat-val">85/100</span>
+                                </div>
+                                <div class="rpg-stat-row">
+                                    <span class="rpg-stat-label">STR (Hardware Setup / Rig)</span>
+                                    <div class="rpg-stat-bar">
+                                        <div class="rpg-stat-fill" style="width: 78%;" id="stat-str"></div>
+                                    </div>
+                                    <span class="rpg-stat-val">78/100</span>
+                                </div>
+                                <div class="rpg-stat-row">
+                                    <span class="rpg-stat-label">VIT (Focus / Perseverance)</span>
+                                    <div class="rpg-stat-bar">
+                                        <div class="rpg-stat-fill" style="width: 90%;" id="stat-vit"></div>
+                                    </div>
+                                    <span class="rpg-stat-val">90/100</span>
+                                </div>
+                                <div class="rpg-stat-row">
+                                    <span class="rpg-stat-label">DEX (Terminal Shell Speed)</span>
+                                    <div class="rpg-stat-bar">
+                                        <div class="rpg-stat-fill" style="width: 82%;" id="stat-dex"></div>
+                                    </div>
+                                    <span class="rpg-stat-val">82/100</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- RPG Right: Active Skills (Hobbies) -->
+                        <div class="rpg-skills-grid">
+                            <!-- Skill 1 -->
+                            <div class="rpg-skill-card active" data-int="92" data-str="70" data-vit="95" data-dex="75">
+                                <div class="rpg-skill-header">
+                                    <span class="rpg-skill-icon">♟️</span>
+                                    <div class="rpg-skill-meta">
+                                        <h5>Tactical Chess</h5>
+                                        <span class="rpg-skill-lvl">LVL 4 // PASSIVE</span>
+                                    </div>
+                                </div>
+                                <p class="rpg-skill-desc">Love playing rapid games online. It keeps my brain sharp and teaches me to think three steps ahead.</p>
+                            </div>
+
+                            <!-- Skill 2 -->
+                            <div class="rpg-skill-card" data-int="80" data-str="92" data-vit="88" data-dex="85">
+                                <div class="rpg-skill-header">
+                                    <span class="rpg-skill-icon">🎮</span>
+                                    <div class="rpg-skill-meta">
+                                        <h5>PC Gaming</h5>
+                                        <span class="rpg-skill-lvl">LVL 5 // BUFFED</span>
+                                    </div>
+                                </div>
+                                <p class="rpg-skill-desc">From multiplayer strategy to setting up local servers, gaming is where I explore complex mechanics.</p>
+                            </div>
+
+                            <!-- Skill 3 -->
+                            <div class="rpg-skill-card" data-int="88" data-str="72" data-vit="92" data-dex="88">
+                                <div class="rpg-skill-header">
+                                    <span class="rpg-skill-icon">🌐</span>
+                                    <div class="rpg-skill-meta">
+                                        <h5>Open Source</h5>
+                                        <span class="rpg-skill-lvl">LVL 3 // FOCUS</span>
+                                    </div>
+                                </div>
+                                <p class="rpg-skill-desc">Contributing code templates, CLI scripts, and clean styles to GitHub. Sharing is how we grow.</p>
+                            </div>
+
+                            <!-- Skill 4 -->
+                            <div class="rpg-skill-card" data-int="82" data-str="85" data-vit="85" data-dex="92">
+                                <div class="rpg-skill-header">
+                                    <span class="rpg-skill-icon">🔧</span>
+                                    <div class="rpg-skill-meta">
+                                        <h5>Tech Tinkering</h5>
+                                        <span class="rpg-skill-lvl">LVL 4 // COOLDOWN</span>
+                                    </div>
+                                </div>
+                                <p class="rpg-skill-desc">Customizing my terminal, writing automation scripts, and exploring cool command-line utilities.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Rich & Feature-Rich Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-columns">
+                <!-- Column 1: Directory Links -->
+                <div class="footer-col footer-directory">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#intro">01/ Home Introduction</a></li>
+                        <li><a href="#about">02/ Student Bio</a></li>
+                        <li><a href="#stack">03/ Technical Skills</a></li>
+                        <li><a href="#projects">04/ Code Workspace</a></li>
+                        <li><a href="#hobbies">05/ Status Dashboard</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 2: Interactive Mailbox widget -->
+                <div class="footer-col footer-mailbox">
+                    <h4>Interactive Local Mailbox</h4>
+                    <p class="footer-subtext">Send a message directly to my browser's local DB.</p>
+                    <form class="mailbox-form" id="mailbox-form" onsubmit="return false;">
+                        <input type="email" id="mail-email" placeholder="email@address.com" required>
+                        <textarea id="mail-msg" placeholder="Write message..." rows="3" required></textarea>
+                        <button type="submit" class="btn btn-primary btn-sm" id="btn-mail-send">Send Output</button>
+                    </form>
+                    <p class="mailbox-log" id="mailbox-log"></p>
+                </div>
+
+                <!-- Column 3: Server Monitor Status -->
+                <div class="footer-col footer-monitor">
+                    <h4>System Logs & Monitor</h4>
+                    <div class="monitor-panel">
+                        <div class="monitor-row">
+                            <span class="mon-lbl">Local Host IP:</span>
+                            <span class="mon-val code-font">127.0.0.1:8080</span>
+                        </div>
+                        <div class="monitor-row">
+                            <span class="mon-lbl">Server Status:</span>
+                            <span class="mon-val status-online code-font">ONLINE</span>
+                        </div>
+                        <div class="monitor-row">
+                            <span class="mon-lbl">YCP Term:</span>
+                            <span class="mon-val code-font">Semester VI</span>
+                        </div>
+                        <div class="monitor-row">
+                            <span class="mon-lbl">Academic GPA:</span>
+                            <span class="mon-val code-font">9.1 / 10.0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom socials and credits -->
+            <div class="footer-bottom">
+                <div class="footer-socials">
+                    <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"></path></svg>
+                    </a>
+                    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg>
+                    </a>
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="social-icon"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                    </a>
+                </div>
+                <div class="footer-copy">
+                    <p>&copy; 2026 Atharv Raval. Custom Bento IDE Workstation. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
